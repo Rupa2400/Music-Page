@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Home Page</title>
+  <link rel="stylesheet" href="home.css">
+  <script src="home.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $("button").click(function() {
+        $("#div1").fadeToggle("slow");
+        $("#div2").fadeToggle(3000);
+        $("#div3").fadeToggle(6000);
+      });
+    });
+  </script>
+</head>
+
+<body>
+
+  <header class="header">
+    <img src="images/logo.png" alt="HTML5 Icon" width="70" height="50">
+    <h1 class="logo"><a href="#">Artistify</a></h1>
+    <ul class="main-nav">
+    <li><a href="home.html">Home</a></li>
+            <li><a href="premium.html">Premium</a></li>
+            <li><a href="playlist.html">Playlists</a></li>
+            <li><a href="subscription.html">Subscription</a></li>
+            <li><a href="login.html">Login</a></li>
+    </ul>
+  </header>
+  <main>
+    <div class="pod">
+      <aside class="left">
+
+        <img src="https://www.scdn.co/i/free/screen_shot_taste_profile.jpg" alt="">
+
+
+      </aside>
+      <section class="right">
+ 
+        <h1 style="color:#E4FC3A">Play millions of songs and podcasts for free!</h1>
+        <button type="button" class="try"><a href='#sign'>Try Artisify</a></button>
+      </section>
+    </div><br><br><br><br><br><br><br><br><br>
+    <div class="power">
+    <img src="images/about.jpg" alt="">
+</div>
+    <div class="music">
+      
+      <h1 class="why" style="color:#E4FC3A" align="center">Why Artistify?</h1>
+      <p align="center">
+      <button class="popup">
+        <h3>This is why you should try <em>Artistify</em></h3>
+      </button><br><br>
+  </p>
+      <div class="play">
+        <img src="images/play.png" id="div1" alt="">
+        <img src="images/playlist.png" id="div2" alt="">
+        <img src="images/make.png" id="div3" alt="">
+      </div>
+      <div class="fav">
+        <h2 style="color:#FCC1C1">Play Your Favourites.</h2>
+        <p style="color:#FF00F3">Listen to the songs you love, and discover new music and podcasts.</p><br><br>
+        <h2 style="color:#FCC1C1">Playlists Made Easy.</h2>
+        <p style="color:#FF00F3">We'll help you make playlists. Or enjoy playlists made by music experts.</p><br><br>
+        <h2 style="color:#FCC1C1">Make It Yours.</h2>
+        <p style="color:#FF00F3">Tell us what you like, and we'll recommend music for you.</p>
+      </div>
+    </div>
+    
+    <div class="welcome">
+      <h1 class="signup_pg" id="sign" style="font-family:Copperplate; font-size:500%; color: #98FC3A">Welcome To The
+        Sign Up Page!</h1>
+      <br>
+      <form method="POST">
+        <label for="uname"><b>Username</b></label>
+        <input type="text" name="username" placeholder="Enter Username" name="uname" required>
+        <br><br>
+        <label for="email"><b>Email:</b></label>
+        <input type="email" id="email" name="email" placeholder="name@email.com" required>
+        <br><br>
+        <label for="psw"><b>Password</b></label>
+        <input type="password" id="psw" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+        <br><br>
+        <div id="message">
+          <h3>Password must contain the following:</h3>
+          <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+          <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
+          <p id="number" class="invalid">A <b>number</b></p>
+          <p id="length" class="invalid">Minimum <b>8 characters</b></p>
+        </div>
+        <label><b>Repeat Password:</b></label>
+        <input type="password" name="psw-repeat" required>
+        <br>
+        <div class="clearfix">
+          <button type="button" class="cancelbtn">Cancel</button>
+          <button type="submit" name="sign" class="signupbtn">Sign Up</button><br><br>
+        </div>
+        <p class='login'>Already have an account?<a href="login.html">Login here</a></p>
+      </form>
+    </div>
+    <div class="QnA">
+      <div class="QnAT">
+        <h1 style="color:#2305FF">Got Questions?</h1>
+        <details>
+          <summary style="color:#451D78">How do I create a playlist?</summary>
+          <p style="color:#D8FFFF">Playlists are a great way to save collections of music, either for your own listening
+            or to share.</p>
+          <p style="color:#D8FFFF">To create one:</p>
+          <ol>
+            <li style="color:#D8FFFF">Tap Your Library.</li>
+            <li style="color:#D8FFFF">Tap CREATE.</li>
+            <li style="color:#D8FFFF">Give your playlist a name.</li>
+            <li style="color:#D8FFFF">Start adding songs (and we’ll help you along).</li>
+          </ol>
+        </details><br>
+        <details>
+          <summary style="color:#451D78">Is it only possible to shuffle play music</summary>
+          <p style="color:#D8FFFF">Any playlist with the shuffle icon will play on shuffle.<br>Some playlists won't have
+            the shuffle icon, so you can tap any song to play it.</p>
+        </details>
+        <h2 style="color:#0E0071">For any other queries, Contact Us</h2>
+        <textarea name="name" rows="1" cols="30" placeholder="Full Name" class="contact"></textarea><br>
+        <textarea name="name" rows="1" cols="30" placeholder="Email" class="contact"></textarea><br>
+        <textarea name="name" rows="2" cols="30" placeholder="Subject" class="contact"></textarea><br>
+        <textarea name="name" rows="10" cols="30" placeholder="Message" class="contact"></textarea><br><br>
+        <button type="submit" class="message">Send Message</button><br><br>
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>

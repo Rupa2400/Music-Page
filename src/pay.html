@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Payment</title>
+    <link rel="stylesheet" href="home.css">
+
+    <script
+    src="https://code.jquery.com/jquery-3.1.1.js"
+    integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+    crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+
+  </head>
+  <body>
+  
+    <header class="header">
+        <img src="images/logo.png" alt="HTML5 Icon" width="70" height="50">
+        <h1 class="logo"><a href="#">Artistify</a></h1>
+          <ul class="main-nav">
+          <li><a href="home.html">Home</a></li>
+            <li><a href="premium.html">Premium</a></li>
+            <li><a href="playlist.html">Playlists</a></li>
+            <li><a href="subscription.html">Subscription</a></li>
+            <li><a href="login.html">Login</a></li>
+          </ul>
+  </header>
+
+<div class="why1">
+
+    <h1>Why Go For Premium?</h1>
+    <div class="container">
+      <div class="slider-outer">
+        <img src="images/arrow-left.png" class="prev" alt="Prev">
+        <div class="slider-inner">
+          <img src="images/ADS.jpg" class="active">
+          <img src="images/PLAYANYWHERE.jpg">
+          <img src="images/OFFLINE.jpg">
+          <img src="images/PAYMENT.jpg">
+        </div>
+        <img src="images/arrow-right.png" class="next" alt="Next">
+      </div>
+    </div>
+  <div class="payment">
+    <h1 class="signup_pg" id="sign">Get Your Premium!</h1>
+    <br>
+    <form method="POST" name="loginform">
+      <label for="uname"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" required>
+          <br><br>
+          <label for="email"><b>Email:</b></label>
+            <input type="email" id="email" placeholder="name@email.com" required>
+          <br><br>
+          <label for="psw"><b>Password</b></label>
+            <input type="password" id="psw" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+            <br><br>
+            <div id="message">
+              <h3>Password must contain the following:</h3>
+              <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+              <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
+              <p id="number" class="invalid">A <b>number</b></p>
+              <p id="length" class="invalid">Minimum <b>8 characters</b></p>
+            </div>
+          <br><br>
+
+
+
+          <h4>Do you have a Credit Card, Debit Card or GooglePay?</h4>
+          <select name="payment" class="test">
+            <option value="cc" class="test">Credit Card</option>
+            <option value="cc" class="test">Debit Card</option>
+            <option value="pp" class="test">GooglePal</option>
+          </select>
+          <br>
+          <h4>Which Plan would you like to select?</h4>
+          <select name="payment" class="test">
+            <option value="mon">Montly</option>
+            <option value="qua">Quartely</option>
+            <option value="hal">Half a Year</option>
+            <option value="yea">Yearly</option>
+          </select><br><br>
+          <label for="pay"><b>Enter the amount you need to pay:</b></label><br>
+          <input type="text" id="pay" min="0" max="10000" placeholder="₹" required>
+          <br><br>
+
+          <p>Date: <input type="text" id="datepicker"></p>
+
+          <div class="clearfix">
+                <button type="button" class="cancelbtn">Cancel</button>
+                <button type="submit" name="pay" onclick="myFunction()" class="signupbtn">Pay</button><br><br>
+
+          </div>
+
+          <h2 class='login'>Thank You!</h2>
+        </form>
+  </div>
+  </body>
+</html>

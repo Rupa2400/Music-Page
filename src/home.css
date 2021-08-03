@@ -1,0 +1,360 @@
+body{
+	background-image: linear-gradient(to left, rgb(82, 39, 115) ,rgb(227, 138, 200));
+	font-family: 'Montserrat', sans-serif;
+	margin: 0;
+}
+ul {
+  list-style: none;
+}
+a {
+	color: black;
+	text-decoration: none;
+}
+.popup{
+	margin-left: 30%;
+
+}
+.logo {
+	margin: 0;
+	font-size: 1.45em;
+}
+.main-nav {
+	margin-top: 5px;
+}
+.main-nav a {
+	padding: 10px 15px;
+	text-transform: uppercase;
+	display: block;
+	color: white;
+}
+.logo a{
+	padding-top: 13px;
+	padding-right: 790px;
+	text-transform: uppercase;
+	display: block;
+	color: white;
+}
+.main-nav a {
+	font-size: .99em;
+}
+.main-nav a:hover {
+	color: red;
+}
+.header {
+	padding-top: .5em;
+	padding-bottom: .5em;
+	background-color: rgba(5,5,5,0.5);
+	position : fixed;
+	width : 100%;
+	flex-direction: row;
+  justify-content: space-between;
+}
+.header, .main-nav {
+  display: flex;
+}
+.left img {
+border: solid 2px #000000;
+width: 20%;
+margin:10% auto;
+margin-left:15%;
+border-radius: 10px;
+float: left;
+}
+.right {
+width: 50%;
+display: inline-block;
+padding-top:150px;
+padding-left: 150px;
+}
+.try{
+	background-color: black;
+  padding: 30px 58px;
+  margin: 8px 0;
+	border: 2px solid black;
+	border-radius: 40px;
+	font-size: 1.45em;
+}
+.try a{
+	color: white;
+}
+.why{
+	padding-top: 10px;
+}
+.play{
+	width:20%;
+	float:left;
+}
+.play img{
+	display: inline-block;
+	border: solid 2px #000000;
+	width: 50%;
+	margin-left:400px;
+}
+.fav{
+	float: right;
+	width: 50%;
+	display: inline-block;
+	margin-right:100px;
+}
+form{
+  text-align: center;
+}
+.cancelbtn{
+  background-color: #e30b1d;
+}
+.cancelbtn, .signupbtn{
+  font-size: 1em;
+  color : #fff;
+	border: 1px solid black;
+	border-radius: 15px;
+	padding: 15px 30px;
+  margin: 8px 0;
+}
+.signupbtn{
+  background-color: #1e8f4d;
+}
+.signup_pg{
+	text-align: center;
+}
+.login a{
+	color : #fff;
+}
+.login a:hover {
+	text-decoration: underline;
+	color: red;
+}
+input[type=text],[type=email],[type=password]{
+	padding: 10px 10px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+}
+.QnAT{
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 100px;
+	margin-left: 200px;
+	margin-right: 200px;
+}
+.queries{
+	border-radius: 5px;
+}
+h1{
+	font-size: 45px;
+}
+h2{
+	font-size: 30px;
+}
+p{
+	font-size: 20px;
+}
+.welcome{
+	padding-top: 500px;
+}
+.message{
+	color: black;
+	background-color: #229c45;
+  padding: 20px 50px;
+  margin: 8px 0;
+	border: 1px solid black;
+	border-radius: 40px;
+	font-size: 1em;
+}
+.contact{
+	color: black;
+	background-color: white;
+  padding: 20px 30px;
+  margin: 8px 0;
+	border-radius: 20px;
+	font-size: 15px;
+}
+.row{
+	padding-top: 150px;
+}
+.loginpg{
+	padding-top: 150px;
+}
+.pre{
+	text-align: center;
+	padding-top: 100px;
+}
+.power img{
+	width:60%;
+	height:60%;
+	align:center;
+	border-radius: 50px;
+
+}
+.power{
+	text-align:center;
+}
+.power h1{
+	text-align:center;
+	color:#79F1FF;
+}
+.pick h1,p{
+	text-align: center;
+}
+.boxes{
+	display: inline-block;
+	align-items: center;
+}
+.box1, .box2, .box3, .box4 {
+	text-align: center;
+	display: inline-block;
+  background-color: white;
+	color: #4fadbd;
+  width: 150px;
+	height: 200px;
+  border: 3px solid black;
+	border-radius: 20px;
+  padding: 50px;
+  margin: 40px;
+	margin-left: 70px;
+	font-size: 20px;
+}
+.boxes a{
+	color: white;
+}
+.why1{
+	padding-top: 80px;
+}
+.why1 h1{
+	text-align: center;
+}
+.for img{
+	border: solid 2px #000000;
+}
+.a, .b, .c, .d{
+	display: inline-block;
+}
+.a h2, .a p, .b h2, .b p, .c h2, .c p, .d h2, .d p{
+padding-left: 20px;
+}
+.a img, .c img{
+	margin-left: 90px;
+}
+.d img{
+	margin-left: 130px;
+}
+.b img{
+	margin-left: 155px;
+}
+.payment{
+	padding-top:100px;
+}
+.test{
+	padding: 10px;
+	border: 1px solid black;
+	border-radius: 5px;
+}
+input {
+	width: 30%;
+	padding: 12px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+	margin-top: 6px;
+	margin-bottom: 16px;
+  }
+
+  /* Style the submit button */
+  input[type=submit] {
+	background-color: #4CAF50;
+	color: white;
+  }
+ 
+  /* Style the container for inputs */
+  .container {
+	background-color: #f1f1f1;
+	padding: 20px;
+  }
+
+  /* The message box is shown when the user clicks on the password field */
+  #message {
+	display:none;
+	background: #f1f1f1;
+	color: #000;
+	position: relative;
+	padding: 20px;
+	margin-top: 10px;
+  }
+
+  #message p {
+	padding: 10px 35px;
+	font-size: 18px;
+  }
+
+  /* Add a green text color and a checkmark when the requirements are right */
+  .valid {
+	color: green;
+  }
+
+  .valid:before {
+	position: relative;
+	left: -35px;
+	content: "✔";
+  }
+
+  /* Add a red text color and an "x" when the requirements are wrong */
+  .invalid {
+	color: red;
+  }
+
+  .invalid:before {
+	position: relative;
+	left: -35px;
+	content: "✖";
+  }
+
+
+
+.container{
+	width:540px;
+	margin:40px auto;
+	overflow:auto;
+}
+
+.slider-inner{
+	width:500px;
+	height:500px;
+	position:relative;
+	overflow:hidden;
+	float:left;
+	padding:3px;
+	border:#666 solid 1px;
+}
+
+.slider-inner img{
+	display:none;
+	width:500px;
+	height:500px;
+}
+
+.slider-inner img.active{
+	display:inline-block;
+}
+
+.prev,.next{
+	float:left;
+	margin-top:260px;
+	cursor: pointer;
+}
+
+.prev{
+	position:relative;
+	margin-right:-45px;
+	z-index:100;
+}
+
+.next{
+	position:relative;
+	margin-left:-45px;
+	z-index:100;
+}
+.conatiner{
+	padding-top: 50px;
+}
+.playlist{
+	padding-top: 100px;
+}
